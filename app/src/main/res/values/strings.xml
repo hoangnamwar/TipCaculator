@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TipCacullator</string>
+    <string name="email">Email</string>
+    <string name="required">Required</string>
+    <string name="question">Question</string>
+    <string name="answer_a">Answer A</string>
+    <string name="answer_b">Answer B</string>
+    <string name="answer_c">Answer C</string>
+    <string name="answer_d">Answer D</string>
+    <string name="correct_answer">Correct answer</string>
+</resources>
