@@ -1,5 +1,6 @@
 package com.example.tipcacullator
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -27,12 +28,10 @@ class DetailEdit : AppCompatActivity() {
             val answerC = binding.ACAnswerCForm.text.toString()
             val answerD = binding.ACAnswerDForm.text.toString()
             val answerCorrect = binding.ACAnswerCorrectForm.text.toString()
-            println("question: $question")
-            println("A: $answerA")
-            println("B: $answerB")
-            println("C: $answerC")
-            println("D: $answerD")
-            println("correct: $answerCorrect")
+
+            val cau_hoi : CauHoi = CauHoi(question, answerCorrect)
+            cau_hoi.setDapAn(answerA, answerB, answerC, answerD)
+            DanhSachCauHoi.themCauHoi(cau_hoi)
         }
 
         AC_button_back.setOnClickListener { actionBar.setDisplayHomeAsUpEnabled(true) }

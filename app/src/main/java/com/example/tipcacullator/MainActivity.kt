@@ -10,12 +10,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val activityBar = supportActionBar
-        activityBar!!.title = "Chỉnh sửa"
-
         button.setOnClickListener {
             val intent = Intent(this, DetailEdit::class.java)
             startActivity(intent)
+            finish()
         }
+
+
+
+
     }
 }
