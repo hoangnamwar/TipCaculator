@@ -10,6 +10,21 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TipCacullator">
         <activity
+            android:name=".atc_bruh"
+            android:exported="false" />
+        <activity
+            android:name=".atc_ChangeCauHoi"
+            android:exported="false" />
+        <activity
+            android:name=".atc_UpdateQuestion"
+            android:exported="false" />
+        <activity
+            android:name=".Atc_ChangeValue"
+            android:exported="false" />
+        <activity
+            android:name=".Atc_UpdateQuestion"
+            android:exported="false" />
+        <activity
             android:name=".ListQuestion"
             android:exported="false" />
         <activity

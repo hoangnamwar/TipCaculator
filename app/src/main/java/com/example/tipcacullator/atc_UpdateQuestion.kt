@@ -1,31 +1,34 @@
 package com.example.tipcacullator
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.Button
-import android.widget.EditText
 import android.widget.TextView
 import kotlinx.android.synthetic.main.activity_atc_delete_question.*
+import kotlinx.android.synthetic.main.activity_atc_delete_question.Find_btn
+import kotlinx.android.synthetic.main.activity_atc_delete_question.idNumber
+import kotlinx.android.synthetic.main.activity_atc_update_question.*
 
-class atc_deleteQuestion : AppCompatActivity() {
+class atc_UpdateQuestion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_atc_delete_question)
+        setContentView(R.layout.activity_atc_update_question)
 
         val findButton : Button = findViewById(R.id.Find_btn)
-        val deleteButton : Button = findViewById(R.id.Delete_btn)
+        val updateQuestion : Button = findViewById(R.id.Update_btn)
 
 
-        idNumber.addTextChangedListener(object : TextWatcher{
+        idNumber.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
 
             }
 
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 findButton.isEnabled = true
-                deleteButton.isEnabled = true
+                updateQuestion.isEnabled = true
 
             }
 
@@ -57,20 +60,23 @@ class atc_deleteQuestion : AppCompatActivity() {
                 }
                 output.text = "Question: $question\nA: ${answer[0]}\nB: ${answer[1]}\nC: ${answer[2]}\nD: ${answer[3]}\nCorrect answer: $correctAnswer"
             }
-            Delete_btn.setOnClickListener {
-                var idQuestion: Int = 0
-                idQuestion = idNumber.text.toString().toInt() - 1
-                var output: TextView = findViewById(R.id.CauHoiIsFound)
-                if(idQuestion < 0 || danhsachcauhoi.getSize() < 1)
-                    output.text = "You must find out your question you want to delete first"
-                else{
-                    val danhsachcauhoi = DanhSachCauHoi
-                    danhsachcauhoi.xoaCauHoi(idQuestion)
-                    output.text = "Question is deleted"
+        }
+
+        Update_btn.setOnClickListener {
+            var idQuestion: Int = 0
+            idQuestion = idNumber.text.toString().toInt() - 1
+            val danhsachcauhoi : DanhSachCauHoi = DanhSachCauHoi
+            var output: TextView = findViewById(R.id.CauHoiIsFound)
+            if(idQuestion > danhsachcauhoi.getSize() || danhsachcauhoi.getSize() < 1)
+                output.text = "Number question is invalid"
+            else{
+                println("idNumber + $idQuestion")
+                Intent(this, atc_ChangeCauHoi::class.java).also {
+                    it.putExtra("idNumber", idQuestion)
+                    startActivity(it)
                 }
+
             }
-
-
         }
 
     }
