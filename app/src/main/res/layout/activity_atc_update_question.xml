@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".atc_UpdateQuestion">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="50dp"
+        android:textStyle="bold"
+        android:text="Enter ID Number"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/idNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/idNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:ems="10"
+        android:hint="ID Number"
+        android:inputType="numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/CauHoiIsFound"
+        app:layout_constraintEnd_toEndOf="@+id/CauHoiIsFound"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/CauHoiIsFound"
+        android:layout_width="209dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="291dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idNumber" />
+
+    <Button
+        android:id="@+id/Find_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="55dp"
+        android:text="Find"
+        android:enabled="false"
+        app:layout_constraintEnd_toStartOf="@+id/Update_btn"
+        app:layout_constraintTop_toBottomOf="@+id/CauHoiIsFound" />
+
+    <Button
+        android:id="@+id/Update_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="83dp"
+        android:text="Update"
+        android:enabled="false"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Find_btn"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

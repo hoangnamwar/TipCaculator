@@ -19,6 +19,11 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, atc_deleteQuestion::class.java)
             startActivity(intent)
         }
+        btn_updateQuestion.setOnClickListener {
+            val intent = Intent(this, atc_UpdateQuestion::class.java)
+            startActivity(intent)
+        }
+        
 
     }
 }

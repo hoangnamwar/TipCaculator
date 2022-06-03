@@ -47,11 +47,11 @@
 
     <Button
         android:id="@+id/Find_btn"
-        android:enabled="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="84dp"
         android:layout_marginBottom="208dp"
+        android:enabled="false"
         android:text="Find"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
