@@ -25,6 +25,9 @@
             android:name=".Atc_UpdateQuestion"
             android:exported="false" />
         <activity
+            android:name=".ListQuestion"
+            android:exported="false" />
+        <activity
             android:name=".atc_deleteQuestion"
             android:exported="false" />
         <activity
