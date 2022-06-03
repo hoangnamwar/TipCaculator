@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/btn_editQuestion"
+        android:id="@+id/btn_updateQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -34,8 +34,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
         android:text="Xóa câu hỏi"
-        app:layout_constraintStart_toStartOf="@+id/btn_editQuestion"
-        app:layout_constraintTop_toBottomOf="@id/btn_editQuestion" />
+        app:layout_constraintStart_toStartOf="@+id/btn_updateQuestion"
+        app:layout_constraintTop_toBottomOf="@id/btn_updateQuestion" />
 
     <Button
         android:id="@+id/button3"
