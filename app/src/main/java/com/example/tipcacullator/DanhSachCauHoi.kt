@@ -6,6 +6,9 @@ object DanhSachCauHoi{
     fun themCauHoi(cau_hoi: CauHoi){
         danh_sach_cau_hoi.add(cau_hoi)
     }
+    fun xoaCauHoi(i : Int){
+        danh_sach_cau_hoi.remove(danh_sach_cau_hoi[i])
+    }
     fun getAllCauHoi(): ArrayList<CauHoi>{
         return danh_sach_cau_hoi
     }
