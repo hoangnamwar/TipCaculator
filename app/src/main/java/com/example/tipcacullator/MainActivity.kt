@@ -10,14 +10,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        button.setOnClickListener {
+        btn_addQuestion.setOnClickListener {
             val intent = Intent(this, DetailEdit::class.java)
             startActivity(intent)
-            finish()
         }
 
-
-
+        btn_deleteQuestion.setOnClickListener {
+            val intent = Intent(this, atc_deleteQuestion::class.java)
+            startActivity(intent)
+        }
 
     }
 }
