@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/anhki/AndroidStudioProjects/TipCaculator/app/src/main/res/layout/activity_detail_edit.xml" value="0.264" />
+        <entry key="..\:/Users/anhki/AndroidStudioProjects/TipCaculator/app/src/main/res/layout/activity_atc_delete_question.xml" value="0.264" />
+        <entry key="..\:/Users/anhki/AndroidStudioProjects/TipCaculator/app/src/main/res/layout/activity_detail_edit.xml" value="0.25" />
+        <entry key="..\:/Users/anhki/AndroidStudioProjects/TipCaculator/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/music/Study/TipCacullator/app/src/main/res/layout/activity_detail_edit.xml" value="0.264" />
         <entry key="..\:/music/Study/TipCacullator/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/music/Study/TipCacullator/app/src/main/res/layout/select_correct.xml" value="0.2109375" />

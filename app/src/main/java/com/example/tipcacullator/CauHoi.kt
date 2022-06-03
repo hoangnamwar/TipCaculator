@@ -2,9 +2,9 @@ package com.example.tipcacullator
 
 import java.io.Serializable
 
-class CauHoi(private var cau_hoi: String, private var dap_an_dung: String) : Serializable {
+class CauHoi(private var cau_hoi: String, private var dap_an_dung: Int) : Serializable {
 
-    constructor() : this(cau_hoi = "", dap_an_dung = ""){
+    constructor() : this(cau_hoi = "", dap_an_dung = 0){
 
     }
 
@@ -15,10 +15,13 @@ class CauHoi(private var cau_hoi: String, private var dap_an_dung: String) : Ser
     public fun setCauHoi(cau_hoi :String) {
         this.cau_hoi = cau_hoi
     }
-    public fun getDapAnDung(): String{
+    public fun getDapAnDung(): Int{
         return dap_an_dung
     }
-    public fun setDapAnDung(dap_an_dung: String){
+    public fun getAllDapAn() : MutableList<String> {
+        return danh_sach_dap_an
+    }
+    public fun setDapAnDung(dap_an_dung: Int){
         this.dap_an_dung = dap_an_dung
     }
     public fun setDapAn(A : String, B: String, C: String, D: String){

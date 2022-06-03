@@ -27,7 +27,7 @@ class DetailEdit : AppCompatActivity() {
             val answerB = binding.ACAnswerBForm.text.toString()
             val answerC = binding.ACAnswerCForm.text.toString()
             val answerD = binding.ACAnswerDForm.text.toString()
-            val answerCorrect = binding.ACAnswerCorrectForm.text.toString()
+            val answerCorrect = binding.ACAnswerCorrectForm.text.toString().toInt()
 
             val cau_hoi : CauHoi = CauHoi(question, answerCorrect)
             cau_hoi.setDapAn(answerA, answerB, answerC, answerD)

@@ -7,41 +7,44 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_addQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="108dp"
-        android:layout_marginTop="102dp"
-        android:text="Thêm sản phẩm"
+        android:layout_marginStart="132dp"
+        android:gravity="center"
+        android:layout_marginTop="112dp"
+        android:text="Thêm câu hỏi"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_editQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="42dp"
-        android:text="Sửa sản phẩm"
-        app:layout_constraintEnd_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="4dp"
+        android:gravity="center"
+        android:text="Sửa câu hỏi"
+        app:layout_constraintEnd_toEndOf="@+id/btn_addQuestion"
+        app:layout_constraintTop_toBottomOf="@+id/btn_addQuestion" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btn_deleteQuestion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="Xóa sản phẩm"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        android:text="Xóa câu hỏi"
+        app:layout_constraintStart_toStartOf="@+id/btn_editQuestion"
+        app:layout_constraintTop_toBottomOf="@id/btn_editQuestion" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="54dp"
-        android:text="Xem list sản phẩm"
+        android:layout_marginTop="52dp"
+        android:text="Xem tất cả câu hỏi"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_deleteQuestion" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
