@@ -25,11 +25,11 @@ class AdapterListItem(
         var answerD : TextView = view.findViewById(R.id.textAnswerD)
 
 
-        question.text = "id: $position    ${arrayList[position].getCauHoi()}"
-        answerA.text = arrayList[position].getAllDapAn().get(0)
-        answerB.text = arrayList[position].getAllDapAn().get(1)
-        answerC.text = arrayList[position].getAllDapAn().get(2)
-        answerD.text = arrayList[position].getAllDapAn().get(3)
+        question.text = "id: ${position + 1}  \nCâu hỏi: ${arrayList[position].getCauHoi()}"
+        answerA.text = "A: " + arrayList[position].getAllDapAn().get(0)
+        answerB.text = "B: " + arrayList[position].getAllDapAn().get(1)
+        answerC.text = "C: " + arrayList[position].getAllDapAn().get(2)
+        answerD.text = "D: " + arrayList[position].getAllDapAn().get(3)
         var correctAnswer = arrayList[position].getDapAnDung()
 
         when (correctAnswer) {
