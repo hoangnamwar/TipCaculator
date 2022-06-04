@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, atc_UpdateQuestion::class.java)
             startActivity(intent)
         }
-        btn_showListQuestion.setOnClickListener{
+        btn_showListQuestion.setOnClickListener {
             val intent = Intent(this, ListQuestion::class.java)
             startActivity(intent)
         }
