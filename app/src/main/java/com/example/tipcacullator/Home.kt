@@ -10,6 +10,8 @@ class Home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
+
+
         btn_thi.setOnClickListener {
             val intent = Intent(this, Exam::class.java)
             startActivity(intent)

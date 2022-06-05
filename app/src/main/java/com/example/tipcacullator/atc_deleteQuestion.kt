@@ -13,24 +13,20 @@ class atc_deleteQuestion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_atc_delete_question)
-
         val findButton : Button = findViewById(R.id.Find_btn)
         val deleteButton : Button = findViewById(R.id.Delete_btn)
 
 
         idNumber.addTextChangedListener(object : TextWatcher{
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
-
             }
 
             override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
                 findButton.isEnabled = true
                 deleteButton.isEnabled = true
-
             }
 
             override fun afterTextChanged(p0: Editable?) {
-
             }
         })
 

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TipCacullator">
         <activity
+            android:name=".Result"
+            android:exported="false" />
+        <activity
             android:name=".Exam"
             android:exported="false" />
         <activity
