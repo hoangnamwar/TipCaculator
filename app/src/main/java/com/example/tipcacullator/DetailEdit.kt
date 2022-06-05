@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.widget.ArrayAdapter
+import android.widget.Toast
 import com.example.tipcacullator.databinding.ActivityDetailEditBinding
 import kotlinx.android.synthetic.main.activity_detail_edit.*
 
@@ -32,9 +33,17 @@ class DetailEdit : AppCompatActivity() {
             val cau_hoi : CauHoi = CauHoi(question, answerCorrect)
             cau_hoi.setDapAn(answerA, answerB, answerC, answerD)
             DanhSachCauHoi.themCauHoi(cau_hoi)
+//
+//            val file = HandleFile()
+//            file.writeFile()
+
+            Toast.makeText(this, "thêm thành công", Toast.LENGTH_SHORT).show()
+
+            Intent(this, MainActivity::class.java).also {
+                startActivity(it)
+            }
         }
 
-        AC_button_back.setOnClickListener { actionBar.setDisplayHomeAsUpEnabled(true) }
     }
 
 
